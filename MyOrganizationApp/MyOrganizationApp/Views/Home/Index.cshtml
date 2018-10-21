@@ -1,5 +1,4 @@
 ﻿@using MyOrganizationApp.Models
-
 @model Subscriber
 
 @{
@@ -33,6 +32,35 @@
 
 		<input type="submit" value="Save"/>
 		<input type="reset" value="Clean"/>
+		}
+
+		<h3>@ViewBag.Message</h3>
+
+		@{
+
+		    var list=ViewBag.Subscribers as List<Subscriber>;
+
+		    if(list!=null)
+		    {
+		        <table>
+			        <tr>Name</tr>
+			        <tr>E-MAil</tr>
+			        <tr>BirthDate</tr>
+                    <tr>RegisterDate</tr>
+                    @foreach (var s in list) {
+                        <tr>
+				            <td>@s.Name</td>
+            				<td>@s.EMail</td>
+            				<td>@s.BirthDate</td>
+            				<td>@s.RegisterDate</td>
+			            </tr>
+                    }
+		        </table>
+		    }
+		else
+		    {
+		        @Html.ValidationSummary(true);
+		    }
 		}
 </body>
 </html>

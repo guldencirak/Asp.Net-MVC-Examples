@@ -1,9 +1,19 @@
 ﻿<Properties StartupConfiguration="{22764167-1D83-44F9-AEF4-261233E8BD1F}|">
   <MonoDevelop.Ide.ItemProperties.MyOrganizationApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyOrganizationApp/Views/Home/SearchByName.cshtml">
+    <Files>
+      <File FileName="MyOrganizationApp/Controllers/HomeController.cs" Line="70" Column="41" />
+      <File FileName="MyOrganizationApp/Views/Home/SearchByName.cshtml" Line="49" Column="62" />
+      <File FileName="MyOrganizationApp/Models/Subscriber.cs" Line="6" Column="28" />
+      <File FileName="MyOrganizationApp/Views/Home/Index.cshtml" Line="55" Column="36" />
+      <File FileName="MyOrganizationApp/DB/SubscriberDAO.cs" Line="21" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/guldencirak/Documents/MVC Course/MyProjects/MyOrganizationApp/MyOrganizationApp/DB/SubscriberDAO.cs" relfile="MyOrganizationApp/DB/SubscriberDAO.cs" line="51" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

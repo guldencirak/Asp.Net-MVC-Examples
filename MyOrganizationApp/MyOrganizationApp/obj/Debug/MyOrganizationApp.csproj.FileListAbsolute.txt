@@ -17,3 +17,4 @@
 /Users/guldencirak/Documents/MVC Course/MyProjects/MyOrganizationApp/MyOrganizationApp/bin/System.Web.Mvc.xml
 /Users/guldencirak/Documents/MVC Course/MyProjects/MyOrganizationApp/MyOrganizationApp/obj/Debug/MyOrganizationApp.dll
 /Users/guldencirak/Documents/MVC Course/MyProjects/MyOrganizationApp/MyOrganizationApp/obj/Debug/MyOrganizationApp.pdb
+/Users/guldencirak/Documents/MVC Course/MyProjects/MyOrganizationApp/MyOrganizationApp/bin/MySql.Data.dll

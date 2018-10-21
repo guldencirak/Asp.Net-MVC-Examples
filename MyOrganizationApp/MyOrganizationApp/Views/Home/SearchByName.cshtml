@@ -1,0 +1,54 @@
+﻿@using MyOrganizationApp.Models
+@model List<Subscriber>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+		<form method="post">
+			<div>
+				<input type="text" name="name" placeholder="aranacak emaili giriniz"/>
+			</div>
+			<div>
+				<input type="submit" value="Ara"/>
+                <input type="reset" value="Temizle" />
+			</div>
+		</form>
+
+		@{
+		    if(Model!=null && Model.Count != 0)
+		    {
+		        <table>
+                <tr>
+                    <th>Ad</th>
+				    <th>EMail</th>
+                    <th>Abonelik Tarihi</th>                    
+                    <th>Doğum Tarihi</th>
+                </tr>               
+                
+                @foreach (var a in Model)
+                {
+                    <tr>
+                        <td>@a.Name</td>
+				        <td>@a.EMail</td>
+                        <td>@a.RegisterDate.ToShortDateString()</td>
+                        <td>@a.BirthDate.ToShortDateString()</td>                        
+                    </tr>
+                }
+            </table>     
+		    }
+		else
+		    {
+		        <h5>Aranan kriterlere uygun abonelik bulunamamıştır</h5>
+		    }
+		}
+</body>
+</html>
+
