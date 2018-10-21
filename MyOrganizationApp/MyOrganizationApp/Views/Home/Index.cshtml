@@ -1,0 +1,38 @@
+﻿@using MyOrganizationApp.Models
+
+@model Subscriber
+
+@{
+    Layout=null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using(Html.BeginForm())
+		{
+		    <div>
+			    @Html.LabelFor(m=>m.EMail)
+			    @Html.EditorFor(m=>m.EMail)
+		    </div>
+		    <div>
+                @Html.LabelFor(m=>m.Name)
+                @Html.EditorFor(m=>m.Name)
+            </div>
+		    <div>
+                @Html.LabelFor(m=>m.BirthDate)
+                @Html.EditorFor(m=>m.BirthDate)
+            </div>
+		    <div>
+			    @Html.Label("accepted")
+			    @Html.CheckBox("accepted")
+		    </div>
+
+		<input type="submit" value="Save"/>
+		<input type="reset" value="Clean"/>
+		}
+</body>
+</html>
